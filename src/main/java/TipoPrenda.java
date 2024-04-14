@@ -3,15 +3,10 @@ public class TipoPrenda {
 
     private String nombrePrenda;
 
-    public TipoPrenda(String nombrePrenda) {
-        this.nombrePrenda = nombrePrenda;
-    }
+    private Categoria categoria;
 
-    public String getNombrePrenda() {
-        return nombrePrenda;
-    }
-
-    public void setNombrePrenda(String nombrePrenda) {
+    public TipoPrenda(String nombrePrenda, Categoria categoria) {
         this.nombrePrenda = nombrePrenda;
+        this.categoria = categoria;
     }
 }
