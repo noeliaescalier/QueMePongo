@@ -9,7 +9,9 @@ public class Prenda {
 
     private String marca;
 
-    public Prenda(TipoPrenda tipoPrenda, Material material, Color colorPrincipal,Color colorSecundario) {
+    private Trama trama;
+
+    public Prenda(TipoPrenda tipoPrenda, Material material, Color colorPrincipal,Color colorSecundario, Trama trama) {
 
         if(tipoPrenda == null){
             throw new IllegalArgumentException("El tipo de prenda es obligatorio.");
