@@ -1,5 +1,5 @@
-public enum Material {
-    ALGODON,
-    POLIESTER,
-    CUERO
+
+public class Material {
+   // ALGODON,POLIESTER,CUERO
+    String nombreMaterial;
 }
