@@ -34,6 +34,9 @@ public class PrendaBorrador {
             this.trama = trama;
         }
     }
+    public void especificarColorSecundario (Color colorSecundario) {
+        this.colorSecundario = colorSecundario;
+    }
 
     public Prenda crearPrenda() {
         if(tipoPrenda == null){
