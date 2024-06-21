@@ -7,25 +7,14 @@ public class Prenda {
 
     private Color colorSecundario;
 
-    private String marca;
+    private Trama trama;
 
-    public Prenda(TipoPrenda tipoPrenda, Material material, Color colorPrincipal,Color colorSecundario) {
-
-        if(tipoPrenda == null){
-            throw new IllegalArgumentException("El tipo de prenda es obligatorio.");
-        }
-
-        if(material == null){
-            throw new IllegalArgumentException("El material es obligatorio.");
-        }
-
-        if(colorPrincipal == null){
-            throw new IllegalArgumentException("El color principal es obligatorio.");
-
-        }
-
-
+    public Prenda(TipoPrenda tipoPrenda, Material material, Color colorPrincipal, Color colorSecundario,Trama trama) {
+        this.tipoPrenda = tipoPrenda;
+        this.material = material;
+        this.colorPrincipal = colorPrincipal;
+        this.colorSecundario = colorSecundario;
+        this.trama = trama;
     }
-
 }
 
