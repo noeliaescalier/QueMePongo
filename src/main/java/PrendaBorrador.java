@@ -23,7 +23,7 @@ public class PrendaBorrador {
 
     public void especificarColorPrincipal(Color colorPrincipal){
         if(colorPrincipal == null){
-            throw new IllegalArgumentException("El material no puede ser nulo.");
+            throw new IllegalArgumentException("El color principal no puede ser nulo.");
         }
     }
 
