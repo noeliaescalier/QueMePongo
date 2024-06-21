@@ -1,5 +1,6 @@
 public class PrendaBorrador {
     private TipoPrenda tipoPrenda;
+  
     private Material material;
 
     private Trama trama = Trama.LISA;
@@ -53,4 +54,5 @@ public class PrendaBorrador {
         }
         return new Prenda(tipoPrenda,material,colorPrincipal,colorSecundario,trama);
     }
+
 }
