@@ -1,6 +1,7 @@
 public class Prenda {
 
     private TipoPrenda tipoPrenda;
+  
     private Material material;
 
     private Color colorPrincipal;

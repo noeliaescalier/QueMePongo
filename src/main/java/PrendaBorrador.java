@@ -1,5 +1,6 @@
 public class PrendaBorrador {
     private TipoPrenda tipoPrenda;
+  
     private Material material;
 
     private Trama trama = Trama.LISA;
@@ -23,7 +24,7 @@ public class PrendaBorrador {
 
     public void especificarColorPrincipal(Color colorPrincipal){
         if(colorPrincipal == null){
-            throw new IllegalArgumentException("El material no puede ser nulo.");
+            throw new IllegalArgumentException("El color principal no puede ser nulo.");
         }
     }
 
@@ -53,4 +54,5 @@ public class PrendaBorrador {
         }
         return new Prenda(tipoPrenda,material,colorPrincipal,colorSecundario,trama);
     }
+
 }

@@ -8,7 +8,7 @@ public class Main {
         System.out.printf("Instanciando!");
     TipoPrenda tipoPrendaZapatos = new TipoPrenda("zapatos",Categoria.CALZADO);
 
-    Prenda prenda = new Prenda(tipoPrendaZapatos,null,null,null);
+    //Prenda prenda = new Prenda(tipoPrendaZapatos,null,null,null);
 
 
     }
