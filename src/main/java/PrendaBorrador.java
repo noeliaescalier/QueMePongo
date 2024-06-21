@@ -9,6 +9,8 @@ public class PrendaBorrador {
 
     private Color colorSecundario;
 
+    private TipoFormalidad tipoFormalidad;
+
 
     public void especificarTipo(TipoPrenda tipoPrenda){
         if(tipoPrenda == null){
@@ -39,6 +41,9 @@ public class PrendaBorrador {
         this.colorSecundario = colorSecundario;
     }
 
+    public void especificarFormalidad(TipoFormalidad tipoFormalidad){
+        this.tipoFormalidad = tipoFormalidad;
+    }
     public Prenda crearPrenda() {
         if(tipoPrenda == null){
             throw new IllegalArgumentException("El tipo de prenda es obligatorio.");
@@ -52,7 +57,7 @@ public class PrendaBorrador {
             throw new IllegalArgumentException("El color principal es obligatorio.");
 
         }
-        return new Prenda(tipoPrenda,material,colorPrincipal,colorSecundario,trama);
+        return new Prenda(tipoPrenda,material,colorPrincipal,colorSecundario,trama,tipoFormalidad);
     }
 
 }
