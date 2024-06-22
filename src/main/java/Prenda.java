@@ -20,5 +20,20 @@ public class Prenda {
         this.trama = trama;
         this.tipoFormalidad = tipoFormalidad;
     }
+
+    public Boolean esSuperior(){
+        return this.tipoPrenda.getCategoria().equals(Categoria.PARTE_SUPERIOR);
+    }
+    public Boolean esInferior(){
+        return this.tipoPrenda.getCategoria().equals(Categoria.PARTE_INFERIOR);
+    }
+    public Boolean esCalzado(){
+        return this.tipoPrenda.getCategoria().equals(Categoria.CALZADO);
+    }
+
+    public Boolean esInformal(){
+        return this.tipoFormalidad.equals(TipoFormalidad.INFORMAL);
+    }
+
 }
 
