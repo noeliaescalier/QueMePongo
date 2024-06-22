@@ -9,4 +9,8 @@ public class TipoPrenda {
         this.nombrePrenda = nombrePrenda;
         this.categoria = categoria;
     }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
 }

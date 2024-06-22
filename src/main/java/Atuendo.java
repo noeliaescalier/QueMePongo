@@ -1,11 +1,14 @@
 
-import java.util.List;
-// Para la primera iteracion esta clase no lo pedia explicitamente en el requerimiento
+
 public class Atuendo {
 
-    private List<Prenda> prendas;
+    private Prenda parteSuperior;
+    private Prenda parteInferior;
+    private Prenda calzado;
 
-    private Color colorPrincipal;
-
-    private Color colorSecundario;
+    public Atuendo(Prenda parteSuperior, Prenda parteInferior, Prenda calzado) {
+        this.parteSuperior = parteSuperior;
+        this.parteInferior = parteInferior;
+        this.calzado = calzado;
+    }
 }
