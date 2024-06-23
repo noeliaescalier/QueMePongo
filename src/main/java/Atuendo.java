@@ -11,4 +11,9 @@ public class Atuendo {
         this.parteInferior = parteInferior;
         this.calzado = calzado;
     }
+
+    public Boolean esAptaParaTemperatura(Integer temperatura){
+        return this.parteSuperior.esAptaParaTemperatura(temperatura) && this.parteInferior.esAptaParaTemperatura(temperatura)
+            && this.calzado.esAptaParaTemperatura(temperatura);
+    }
 }

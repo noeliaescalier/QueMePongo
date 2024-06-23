@@ -11,6 +11,8 @@ public class PrendaBorrador {
 
     private TipoFormalidad tipoFormalidad;
 
+    private Integer temperaturaMaxima;
+
 
     public void especificarTipo(TipoPrenda tipoPrenda){
         if(tipoPrenda == null){
@@ -57,7 +59,7 @@ public class PrendaBorrador {
             throw new IllegalArgumentException("El color principal es obligatorio.");
 
         }
-        return new Prenda(tipoPrenda,material,colorPrincipal,colorSecundario,trama,tipoFormalidad);
+        return new Prenda(tipoPrenda,material,colorPrincipal,colorSecundario,trama,tipoFormalidad,temperaturaMaxima);
     }
 
 }
