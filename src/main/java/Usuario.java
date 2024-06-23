@@ -3,9 +3,12 @@ import java.util.*;
 public class Usuario {
 
   private Integer edad;
-  List<Prenda> prendas = new ArrayList<>();
+
+  Guardarropa guardarropa ;
 
   ProveedorMotorServiceLocator proveedor;
 
-
+  public Integer getEdad() {
+    return edad;
+  }
 }

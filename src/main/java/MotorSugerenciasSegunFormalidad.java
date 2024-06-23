@@ -3,9 +3,9 @@ import com.google.common.collect.*;
 import java.util.List;
 public class MotorSugerenciasSegunFormalidad implements MotorSugerencias {
 
-  public List<Atuendo> generarSugerencias(List<Prenda> prendas, Integer edad){
+  public List<Atuendo> generarSugerencias(Usuario usuario){
 
-    List<Prenda> prendasValidas = edad > 55 ? prendas.stream().filter(prenda -> !prenda.esInformal()).toList() : prendas;
+    List<Prenda> prendasValidas = usuario.getEdad() > 55 ? usuario.guardarropa.getPrendas().stream().filter(prenda -> !prenda.esInformal()).toList() : usuario.guardarropa.getPrendas();
 
     List<Prenda> superiores = prendasValidas.stream().filter(prenda -> prenda.esSuperior()).toList();
     List<Prenda> inferiores = prendasValidas.stream().filter(prenda -> prenda.esInferior()).toList();

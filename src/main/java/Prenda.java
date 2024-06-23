@@ -12,13 +12,16 @@ public class Prenda {
 
     private TipoFormalidad tipoFormalidad;
 
-    public Prenda(TipoPrenda tipoPrenda, Material material, Color colorPrincipal, Color colorSecundario,Trama trama,TipoFormalidad tipoFormalidad) {
+    private Integer temperaturaMaxima;
+
+    public Prenda(TipoPrenda tipoPrenda, Material material, Color colorPrincipal, Color colorSecundario,Trama trama,TipoFormalidad tipoFormalidad,Integer temperaturaMaxima) {
         this.tipoPrenda = tipoPrenda;
         this.material = material;
         this.colorPrincipal = colorPrincipal;
         this.colorSecundario = colorSecundario;
         this.trama = trama;
         this.tipoFormalidad = tipoFormalidad;
+        this.temperaturaMaxima = temperaturaMaxima;
     }
 
     public Boolean esSuperior(){
@@ -34,6 +37,13 @@ public class Prenda {
     public Boolean esInformal(){
         return this.tipoFormalidad.equals(TipoFormalidad.INFORMAL);
     }
+
+    public Boolean esAptaParaTemperatura(Integer temperatura){
+        return temperatura < this.temperaturaMaxima;
+    }
+
+
+
 
 }
 
